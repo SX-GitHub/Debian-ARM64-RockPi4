@@ -1,9 +1,9 @@
 # Hornblende - A Custom Build of Debian ARM64 with Dark Theme for Radxa Rock Pi 4
-*Build 4.4.157.c82*
+*Build 4.4.154.c83*
 
 This is a Debian ARM64 build forked from Radxa (the manufacturer)'s repository (https://github.com/radxa/rockchip-bsp), with extra customized features and tunings.
 
-The kernel version has a prefix "*c*" (*custom*) in the local version number and aligned with Radxa's official build, e.g. 4.4.157.*c*82 is based on Radxa's 4.4.157.82. 
+The kernel version has a prefix "*c*" (*custom*) in the local version number and aligned with Radxa's official build, e.g. 4.4.154.*c*83 is based on Radxa's 4.4.154.83. 
 
 Installed Packages after Build:
 - auto-config
@@ -25,7 +25,10 @@ Themes:
 - Springfield VIM theme, based on the Behelit theme from https://github.com/vim-airline/vim-airline-themes
 
 Tunings:
+- OTG support is turned off in the kernel, to enable ethernet over USB.
 - Enabled ttyS2 on GPIO pin 8/10 for HATs
 - Chromium GPU acceleration flags.
 - “Open Folder as Root” context menu in File Manager.
 - Bluetooth is turned on by default.
+
+![Screenshot](Screenshot%20from%202019-04-18%2006-13-50.png)
