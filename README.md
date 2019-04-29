@@ -32,3 +32,9 @@ Tunings:
 - Bluetooth is turned on by default.
 
 ![Screenshot](Screenshot%20from%202019-04-18%2006-13-50.png)
+
+Don't Forget:
+- Set up timezone by link timezone file to /etc/localtime, e.g.:
+  sudo ln -sf /usr/share/zoneinfo/America/Chicago /etc/localtime
+- Set up locale:
+  sudo dpkg-reconfigure locales
